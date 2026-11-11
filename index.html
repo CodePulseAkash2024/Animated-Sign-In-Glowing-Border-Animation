@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="al"></div>
+
+    <div class="container">
+        <div class="header">Sign In</div>
+
+        <input
+            id="username"
+            class="text"
+            onfocus="handle2()"
+            type="text"
+            name="Username"
+            placeholder="Username"
+        >
+
+        <div class="password-field">
+            <input
+                id="password"
+                class="pass"
+                onfocus="handle1()"
+                type="password"
+                name="Password"
+                placeholder="Password"
+            >
+            <button
+                type="button"
+                id="toggle-password"
+                class="password-toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+            >
+                <svg class="eye-icon eye-open" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <svg class="eye-icon eye-closed" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 3l18 18M10.6 10.6a2 2 0 0 0 2.8 2.8"/>
+                    <path d="M9.9 5.2A10.8 10.8 0 0 1 12 5c6.4 0 10 7 10 7a15.7 15.7 0 0 1-3.1 3.9M6.2 6.2C3.5 8 2 12 2 12s3.6 7 10 7a10.7 10.7 0 0 0 4-.8"/>
+                </svg>
+            </button>
+        </div>
+
+        <button type="button">Sign In</button>
+
+        <div class="socials" aria-label="Social sign in buttons">
+            <button type="button" class="social-btn" aria-label="Continue with Google">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+                    <path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C34.5 2.6 29.7 0 24 0 14.8 0 6.7 5.5 2.8 13.5l7.9 6.1C12.6 14.7 17.7 9.5 24 9.5z"/>
+                    <path fill="#4285F4" d="M46.5 24.4c0-1.7-.2-3.4-.6-5H24v9.3h12.7c-.6 3.2-2.4 5.9-5.1 7.7l8.3 6.4c4.8-4.4 7.6-10.9 7.6-18.4z"/>
+                    <path fill="#FBBC05" d="M31.6 36.1c-2.1 1.4-4.8 2.2-7.6 2.2-5.8 0-10.7-3.9-12.4-9.2l-8.2 6.3C5.7 42.2 14.1 48 24 48c7.2 0 13.3-2.4 17.7-6.6l-10.1-5.3z"/>
+                    <path fill="#34A853" d="M11.5 29.1c-.7-2-.9-4.1-.9-6.1 0-2 .3-4.1.9-6.1l-8.3-6.2C1.5 13.3 1 17.4 1 21.9s.5 8.6 2.2 12.2l8.3-6.2z"/>
+                </svg>
+            </button>
+
+            <button type="button" class="social-btn" aria-label="Continue with Apple">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true">
+                    <path d="M318.7 240.2c0-42.7 34.7-63.3 36.2-64.4-19.7-28.8-50.4-32.8-61.1-33.2-26-2.6-50.8 15.3-64.1 15.3-13.3 0-33.8-14.9-55.5-14.5-28.6.4-54.9 16.7-69.7 42.4-29.7 51.5-7.6 127.3 21.3 169.1 14.1 20.4 30.9 43.3 52.9 42.5 21.2-.9 29.2-13.7 54.9-13.7 25.7 0 33.1 13.7 55.8 13.3 23.1-.4 37.6-20.7 51.5-41.2 16.2-23.7 22.9-46.7 23.3-47.9-.5-.3-44.5-17.1-44.5-63.8zm-44.5-123.3c12.2-14.8 20.3-35.4 18.1-56-17.5 1-38.6 11.8-51.4 26.3-11.3 13.1-21.2 34.1-18.6 54.2 19.8 1.6 40-10.1 51.9-24.5z"/>
+                </svg>
+            </button>
+        </div>
+
+        <svg width="390" height="549"
+             xmlns="http://www.w3.org/2000/svg">
+            <rect
+                id="rect"
+                class="rect1"
+                x="45"
+                y="300"
+                rx="27"
+                ry="27"
+                width="300"
+                height="50"
+                style="stroke:#fff; stroke-width:1px; fill:#000;"
+            />
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
